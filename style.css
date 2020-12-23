@@ -1,0 +1,100 @@
+/* Color values used */
+:root {
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+}
+body{
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+.background-container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#desk-shadow-pattern{
+    position: absolute;
+    top: -300px;
+    left: -559px;
+}
+
+#internet-box{
+    left: 86px;
+    top: 370px;
+    position: absolute;
+    z-index: 1;
+}
+
+#woman-online{
+    position: absolute;
+    top: 60px;
+    left: -85px;
+}
+
+.faq-container {
+    width: 56%;
+    display: flex;
+    margin-left: 500px;
+    flex-direction: row;
+}
+
+.collapse-buttons-container {
+    display: flex;
+    margin-left: 500px;
+    margin-right: 170px;
+    flex-direction: column;
+}
+
+.faq-manipulation {
+    font-size: 32px;
+    color: var(--very-dark-desaturated-blue);
+    padding-top: 45px;
+}
+
+.collapsible {
+    background-color: white;
+    color: var(--very-dark-grayish-blue);
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.collapsible-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.collapsible-header-text {
+
+}
+
+hr{
+    border-top: 1px solid var(--light-grayish-blue);
+    width: 100%;
+}
