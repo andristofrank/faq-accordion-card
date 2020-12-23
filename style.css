@@ -84,6 +84,14 @@ body{
     padding-bottom: 15px;
 }
 
+.collapsible :hover {
+    color: var(--soft-red);
+}
+
+.collapsible.active {
+    font-weight: 700;
+}
+
 .collapsible-header {
     display: flex;
     flex-direction: row;
