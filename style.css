@@ -84,12 +84,13 @@ body{
     padding-bottom: 15px;
 }
 
-.collapsible :hover {
+.collapsible:hover .collapsible-header .collapsible-header-text {
     color: var(--soft-red);
 }
 
-.collapsible.active {
+.active .collapsible-header-text{
     font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
 }
 
 .collapsible-header {
@@ -98,8 +99,20 @@ body{
     justify-content: space-between;
 }
 
-.collapsible-header-text {
+.active #indicator {
+    transform: rotate(180deg);
+    transition: transform 0.3s linear;
+}
 
+.text-after-collapse {
+    color: var(--dark-grayish-blue);
+    padding-top: 10px;
+}
+.collapsible-content {
+    display: none;
+}
+.active .collapsible-content {
+    display: inline;
 }
 
 hr{
