@@ -5,8 +5,9 @@ for(let i = 0; i< collapsable.length; i++) {
         if (collapsable[i].classList.contains('active')) {
             collapsable[i].classList.remove('active');
         } else {
-        collapsable[i].classList.add('active');
-        console.log(collapsable[i]);
+            $('.collapsible').removeClass('active');
+            collapsable[i].classList.add('active');
+            console.log(collapsable[i]);
         }
     })
 }
