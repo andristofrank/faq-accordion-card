@@ -50,12 +50,14 @@ body{
     z-index: 1;
 }
 
-#woman-online{
+#woman-online-desktop{
     position: absolute;
     top: 60px;
     left: -85px;
 }
-
+#woman-online-mobile {
+    display: none;
+}
 .faq-container {
     width: 56%;
     display: flex;
@@ -124,3 +126,42 @@ hr{
 }
 
 /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    body {
+        min-width: 375px;
+    }
+
+    .container {
+        background-color: white;
+        width: 86%;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    #desk-shadow-pattern {
+        position: absolute;
+        top: -120px;
+        left: 46px;
+        width: 220px;
+    }
+
+    #woman-online-desktop {
+       display: none;
+    }
+    
+    #woman-online-mobile {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 44px;
+        width: 250px;
+    }
+
+    #internet-box {
+        display: none;
+    }
+
+}
