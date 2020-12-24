@@ -151,7 +151,7 @@ hr{
     #woman-online-desktop {
        display: none;
     }
-    
+
     #woman-online-mobile {
         display: block;
         position: absolute;
@@ -162,6 +162,18 @@ hr{
 
     #internet-box {
         display: none;
+    }
+
+    .faq-container {
+        margin-top: 20%;;
+        margin-left: 40%;
+    }
+
+    .collapse-buttons-container {
+        display: flex;
+        margin-left: 16px;
+        margin-right: 16px;
+        flex-direction: column;
     }
 
 }
